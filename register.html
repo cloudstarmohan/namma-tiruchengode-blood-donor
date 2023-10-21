@@ -163,7 +163,7 @@
                                 <span class="form-validation-error">Please Enter Mobile</span>
                             </div>
                             <div class="form-group">
-                                <input type="date" class="form-control" id="mobile" name="dob" placeholder="Subject" data-msg="Please Select Dob" />
+                                <input type="date" class="form-control" id="dob" name="dob" placeholder="DOB" data-msg="Please Select DOB" />
                             </div>
                             <div class="form-group">
                                <label><input type="radio"  name="gender" value="male" checked><span>Male</span></label><br />
@@ -326,6 +326,16 @@
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
         <script src="js/register.js"></script>
+        <style>
+            input[type="date"]:before {
+                color: lightgrey;
+                content: attr(placeholder) !important;
+                margin-right: 0.5em;
+            }
+            input[type="date"]:focus:before {
+                content: '' !important;
+            }
+        </style>
         <script>
             $(document).ready(function(){
                 loadMasterList();
