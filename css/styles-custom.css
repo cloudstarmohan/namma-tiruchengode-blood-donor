@@ -84,3 +84,69 @@
   border: 0px;
   border-bottom: 1px solid #a1a1a1;
 }
+
+/* Who Can Donate — deferrals accordion layout */
+.section-deferrals .deferrals-columns > [class*="col-"] {
+  margin-bottom: 24px;
+}
+.section-deferrals .deferral-col-title {
+  margin-bottom: 16px;
+  min-height: 70px;
+}
+.section-deferrals .deferral-col-title h3 {
+  font-size: 22px;
+  line-height: 1.35;
+  margin: 0 0 12px;
+}
+.section-deferrals .deferral-accordion.panel-group {
+  margin-bottom: 0;
+}
+.section-deferrals .deferral-accordion .panel-default.faq-box {
+  margin-top: 16px;
+}
+.section-deferrals .deferral-accordion .panel-default.faq-box:first-child {
+  margin-top: 0;
+}
+@media (max-width: 991px) {
+  .section-deferrals .deferral-col-title {
+    min-height: 0;
+  }
+  .section-deferrals .deferrals-columns > [class*="col-"]:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Donation Steps page */
+.donation-steps-row > [class*="col-"] {
+  margin-bottom: 24px;
+}
+.donation-step-card {
+  background: #fff;
+  padding: 28px 24px 24px;
+  height: 100%;
+  position: relative;
+  text-align: left;
+}
+.donation-step-card .donation-step-num {
+  display: inline-block;
+  background: #EF3D32;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.donation-step-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 12px;
+  color: #1A1A1A;
+}
+.donation-step-card p {
+  margin: 0;
+  line-height: 1.6;
+  color: #555;
+}
